@@ -29,11 +29,11 @@ body {
 
 .nazwisko {
 	position: relative;
-	left: 35%;
+	left: 31%;
 	margin-bottom: 0.5ch;
 	font-size: 18px;
 	border-radius: 12px;
-	padding: 0.25em 0.75em;
+	padding: 0.25em 0em;
 	background: rgba(256, 256, 256, 0);
 	transition: all 0.5s ease-in-out;
 	width: 30%;
@@ -60,6 +60,27 @@ body {
 .zadP:hover {
 	box-shadow: 7px 7px 7px rgba(73, 42, 80, 0.3);
 	background: rgba(256, 256, 256, 0.3);
+}
+.zadP.kod{
+	min-width: 10%;
+	background: linear-gradient(-45deg, #6fa3f1, #ec8fb3, #eca7ca, #acebc8);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	display:none;
+	animation: 0.2s ease appearFromRight;
+}
+@keyframes appearFromRight {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 100;
+	}
+}
+
+.zadP:hover button{
+	display:block;
+	position: relative;
 }
 @keyframes gradient {
 	0% {

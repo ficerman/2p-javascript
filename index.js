@@ -11,8 +11,14 @@ function dodajZadFicerman(zad) {
 	zadP.innerHTML = 'zad. ' + zad
 	zadP.className = 'zadP'
 	zadP.setAttribute('onclick', 'winOpenFicerman(' + zad + ')')
+	zadP.setAttribute('id', zad)
+	let zadPKod = document.createElement('button')
+	zadPKod.innerHTML = 'kod'
+	zadPKod.className = 'zadP kod'
+	zadP.appendChild(zadPKod)
 	document.getElementById('mainContainer').appendChild(zadP)
 }
+
 
 document.addEventListener('DOMContentLoaded', function () {
 	for (let k = 0; k < 29; k++) {
