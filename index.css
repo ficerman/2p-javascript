@@ -29,14 +29,14 @@ body {
 
 .nazwisko {
 	position: relative;
-	left: 20%;
+	left: 35%;
 	margin-bottom: 0.5ch;
 	font-size: 18px;
 	border-radius: 12px;
 	padding: 0.25em 0.75em;
 	background: rgba(256, 256, 256, 0);
 	transition: all 0.5s ease-in-out;
-	width: 60%;
+	width: 30%;
 	color: white;
 	font-size: 10vw;
 }
