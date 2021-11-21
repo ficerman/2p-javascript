@@ -108,35 +108,38 @@ amongusDrip.addEventListener(
 let chemiaNowejEry = new Audio('muzyka z chemii nowej ery (vaporwave edit).mp3')
 scriptExtended = new Boolean(false)
 
-document.getElementById('scrollArrow').addEventListener('click', function () {
-	document
-		.getElementById('breakingBadScript')
-		.setAttribute('style', 'height: 10000vh; overflow: hidden;')
-	this.style.opacity = '0'
-	scriptExtended = true
-	document.body.style.backgroundSize = '10000vh'
-	bodyRep.pause()
-	amongusDrip.pause()
-	amongusDrip.volume = 0
-	bodyRep.volume = 0
-	kotekPermaMad = true
-	chemiaNowejEry.play()
-	document.getElementById('mainContainer').style.opacity = 0
-	document.getElementById('nazwisko').style.opacity = 0
-	document.getElementById('kotek').style.opacity = 0
-	document.getElementById('settings').style.opacity = 0
-	document.getElementById('footer').style.opacity = 0
-	document.getElementById('breakingBadHeader').style.opacity = 100
-})
+document
+	.getElementById('breakingBadScript')
+	.addEventListener('click', function () {
+		document
+			.getElementById('breakingBadScript')
+			.setAttribute('style', 'height: 10000vh; overflow: hidden;')
+		this.style.opacity = '0'
+		scriptExtended = true
+		document.body.style.backgroundSize = '10000vh'
+		bodyRep.pause()
+		amongusDrip.pause()
+		amongusDrip.volume = 0
+		bodyRep.volume = 0
+		kotekPermaMad = true
+		chemiaNowejEry.play()
+		document.getElementById('mainContainer').style.opacity = 0
+		document.getElementById('nazwisko').style.opacity = 0
+		document.getElementById('kotek').style.opacity = 0
+		document.getElementById('settings').style.opacity = 0
+		document.getElementById('footer').style.opacity = 0
+		document.getElementById('breakingBadHeader').style.opacity = 100
+		document.getElementById('breakingBadScript').style.opacity = 100
+	})
 
 document
-	.getElementById('scrollArrow')
+	.getElementById('breakingBadScript')
 	.addEventListener('mouseenter', function () {
 		document.getElementById('breakingBadHeader').style.display = 'block'
 	})
 
 document
-	.getElementById('scrollArrow')
+	.getElementById('breakingBadScript')
 	.addEventListener('mouseleave', function () {
 		if ((scriptExtended = false)) {
 			document.getElementById('breakingBadHeader').style.display = 'none'
