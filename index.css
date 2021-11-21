@@ -32,6 +32,7 @@
 }
 
 body {
+	overflow: scroll;
 	background: linear-gradient(-45deg, #6fa3f1, #ec8fb3, #eca7ca, #acebc8);
 	/*background: linear-gradient(-45deg, #98abc7, #8fece7, #68ccbb, #c3b1f5);*/
 	/*background: linear-gradient(-45deg, #6b5a79, #96777f, #5b737c, #524c68);*/
@@ -48,6 +49,7 @@ body {
 	display: none;
 	opacity: 0;
 	transition: all 0.3s ease-in-out;
+	z-index: 11;
 }
 @keyframes gradient {
 	0% {
@@ -103,6 +105,7 @@ body {
 	transition: all 60s ease-in-out;
 	transform: scale(1);
 	background: rgba(255, 255, 255, 0);
+	min-width: 350px;
 }
 .bookStyle:hover {
 	box-shadow: 7px 7px 7px rgba(73, 42, 80, 0.3);
@@ -144,6 +147,31 @@ p.bookStyle {
 	transition: all 1s ease-in-out;
 	background: rgba(255, 255, 255, 1);
 }
+.linear-wipe {
+	font-style: italic;
+	font-weight: 200;
+	text-align: center;
+
+	background: linear-gradient(
+		60deg,
+		#f79533,
+		#f37055,
+		#ef4e7b,
+		#a166ab,
+		#5073b8,
+		#1098ad,
+		#07b39b,
+		#6fba82
+	);
+
+	color: #000;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+	background-size: 200% 200%;
+	animation: gradient 5s ease infinite;
+}
 .footer {
 	display: flex;
 	flex-direction: row wrap;
@@ -151,7 +179,7 @@ p.bookStyle {
 	height: 5vh;
 	width: fit-content;
 	border-radius: 8px;
-	color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
 	background-color: rgba(73, 42, 80, 0.2);
 	align-items: center;
 	justify-content: space-around;

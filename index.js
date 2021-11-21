@@ -13,7 +13,7 @@ function winOpenFicerman(zad) {
 
 function dodajZadFicerman(zad) {
 	let zadP = document.createElement('button')
-	zadP.innerHTML = 'zad. ' + zad
+	zadP.innerHTML = '-- ' + zad + ' --'
 	zadP.className = 'zadP'
 	zadP.setAttribute('onclick', 'winOpenFicerman(' + zad + ')')
 	zadP.setAttribute('id', zad)
@@ -34,7 +34,7 @@ function kodOpenFicerman(zad) {
 
 function dodajKodFicerman(zad) {
 	let zadP = document.createElement('button')
-	zadP.innerHTML = 'zad. ' + zad + ' kod'
+	zadP.innerHTML = '-- ' + zad + 'k --'
 	zadP.className = 'zadP'
 	zadP.setAttribute('onclick', 'kodOpenFicerman(' + zad + ')')
 	zadP.setAttribute('id', zad + 'kod')
@@ -67,6 +67,7 @@ kotek.addEventListener('click', function () {
 		document.getElementById('cat1').style.opacity = '100'
 		document.getElementById('cat2').style.opacity = '100'
 		document.getElementById('cat3').style.opacity = '100'
+		document.body.style.overflow = 'hidden'
 	}
 })
 kotek.addEventListener('mouseenter', function () {
@@ -92,6 +93,7 @@ kotek.addEventListener('mouseleave', function () {
 amongusDrip.addEventListener(
 	'ended',
 	function () {
+		document.body.style.overflow = 'scroll'
 		document.getElementById('cat1').style.opacity = '0'
 		document.getElementById('cat2').style.opacity = '0'
 		document.getElementById('cat3').style.opacity = '0'
@@ -130,6 +132,10 @@ document
 		document.getElementById('footer').style.opacity = 0
 		document.getElementById('breakingBadHeader').style.opacity = 100
 		document.getElementById('breakingBadScript').style.opacity = 100
+		document.getElementById('breakingBadScript').style.background =
+			'rgba(255, 255, 255, 1)'
+		document.getElementById('breakingBadScript').firstChild.style.background =
+			'rgba(255, 255, 255, 1)'
 	})
 
 document
