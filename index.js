@@ -141,7 +141,7 @@ document
 document
 	.getElementById('breakingBadScript')
 	.addEventListener('mouseleave', function () {
-		if ((scriptExtended = false)) {
+		if (scriptExtended == false) {
 			document.getElementById('breakingBadHeader').style.display = 'none'
 		}
 	})
