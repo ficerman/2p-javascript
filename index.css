@@ -189,10 +189,11 @@ a:visited {
 	background-color: #333;
 	position: relative;
 	padding: 0.5em 0.5em;
-	bottom: 200%;
-	left: -35%;
+	bottom: 220%;
+	right: 200%;
 	color: #fff;
 	border-radius: 8px;
+	pointer-events: none;
 }
 
 .emailWidget:hover div {
