@@ -3,9 +3,9 @@ let backgrounds = [
 	'linear-gradient(-45deg, #6fa3f1, #8fece7, #68cc81, #c3b1f5)',
 ]
 
-function winOpenFicerman(zad) {
+function winOpenFicerman(zad, suffix) {
 	window.open(
-		'zad' + zad + '.html',
+		'zad/zad' + zad + suffix + '.html',
 		'okienko',
 		'toolbar=no,directories=no,menubar=no,height=1000,width=1000,top=200,left=200'
 	)
@@ -15,7 +15,7 @@ function dodajZadFicerman(zad) {
 	let zadP = document.createElement('button')
 	zadP.innerHTML = '-- ' + zad + ' --'
 	zadP.className = 'zadP'
-	zadP.setAttribute('onclick', 'winOpenFicerman(' + zad + ')')
+	zadP.setAttribute('onclick', 'winOpenFicerman(' + zad + ', "")')
 	zadP.setAttribute('id', zad)
 	/*let zadPKod = document.createElement('button')
 	zadPKod.innerHTML = 'kod'
@@ -24,19 +24,11 @@ function dodajZadFicerman(zad) {
 	document.getElementById('mainContainer').appendChild(zadP)
 }
 
-function kodOpenFicerman(zad) {
-	window.open(
-		'zad' + zad + 'kod.html',
-		'okienko',
-		'toolbar=no,directories=no,menubar=no,height=1000,width=1000,top=200,left=200'
-	)
-}
-
 function dodajKodFicerman(zad) {
 	let zadP = document.createElement('button')
 	zadP.innerHTML = '-- ' + zad + 'k --'
 	zadP.className = 'zadP'
-	zadP.setAttribute('onclick', 'kodOpenFicerman(' + zad + ')')
+	zadP.setAttribute('onclick', 'winOpenFicerman(' + zad + ', "kod")')
 	zadP.setAttribute('id', zad + 'kod')
 	/*let zadPKod = document.createElement('button')
 	zadPKod.innerHTML = 'kod'
@@ -53,9 +45,9 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 })
 kotekPermaMad = new Boolean(false)
-var bodyRep = new Audio('bodyreport.mp3')
-var amongusDrip = new Audio('amongusdriptheme.mp3')
-var killSound = new Audio('killsound.mp3')
+var bodyRep = new Audio('mp3/bodyreport.mp3')
+var amongusDrip = new Audio('mp3/amongusdriptheme.mp3')
+var killSound = new Audio('mp3/killsound.mp3')
 let kotek = document.getElementById('kotek')
 kotek.addEventListener('click', function () {
 	if (kotekPermaMad == false) {
@@ -72,7 +64,7 @@ kotek.addEventListener('click', function () {
 })
 kotek.addEventListener('mouseenter', function () {
 	if (kotekPermaMad == false) {
-		kotek.setAttribute('src', 'catMad.ico')
+		kotek.setAttribute('src', 'ico/catMad.ico')
 		bodyRep.reset
 		bodyRep.currentTime = 0
 		bodyRep.play()
@@ -83,13 +75,14 @@ kotek.addEventListener('mouseenter', function () {
 })
 kotek.addEventListener('mouseleave', function () {
 	if (kotekPermaMad == false) {
-		kotek.setAttribute('src', 'icon.ico')
+		kotek.setAttribute('src', 'ico/icon.ico')
 		bodyRep.pause()
 		document.getElementById('cat1').style.display = 'none'
 		document.getElementById('cat2').style.display = 'none'
 		document.getElementById('cat3').style.display = 'none'
 	}
 })
+
 amongusDrip.addEventListener(
 	'ended',
 	function () {
@@ -97,17 +90,22 @@ amongusDrip.addEventListener(
 		document.getElementById('cat1').style.opacity = '0'
 		document.getElementById('cat2').style.opacity = '0'
 		document.getElementById('cat3').style.opacity = '0'
-		document
-			.getElementsByClassName('cat')
-			.addEventListener(this.getAttribute.opacity == 0)
-		{
-			this.style.display = 'none'
-		}
+		setTimeout(() => {
+			document.getElementById('cat1').style.display = 'none'
+		}, 300)
+		setTimeout(() => {
+			document.getElementById('cat2').style.display = 'none'
+		}, 300)
+		setTimeout(() => {
+			document.getElementById('cat3').style.display = 'none'
+		}, 300)
 	},
 	false
 )
 
-let chemiaNowejEry = new Audio('muzyka z chemii nowej ery (vaporwave edit).mp3')
+let chemiaNowejEry = new Audio(
+	'mp3/muzyka z chemii nowej ery (vaporwave edit).mp3'
+)
 scriptExtended = new Boolean(false)
 
 document

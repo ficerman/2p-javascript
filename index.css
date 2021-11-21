@@ -88,6 +88,20 @@ body {
 	flex-flow: row nowrap;
 	justify-content: space-evenly;
 }
+.smol-flexbox-grid {
+	--min: 20vw;
+	--gap: 1rem;
+
+	width: 100vw;
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column wrap;
+	gap: var(--gap);
+}
+
+.smol-flexbox-grid > * {
+	flex: 1 1 var(--min);
+}
 #mainContainer {
 	flex-flow: row wrap;
 	justify-content: space-around;
@@ -107,11 +121,18 @@ body {
 	background: rgba(255, 255, 255, 0);
 	min-width: 350px;
 }
-.bookStyle:hover {
+.textCard.full {
+	background: rgba(255, 255, 255, 1);
+	height: fit-content;
+	max-height: 90vh;
+	border-radius: 25px;
+	padding: 0.25em 0.75em;
+}
+.bookStyle.hoverable:hover {
 	box-shadow: 7px 7px 7px rgba(73, 42, 80, 0.3);
 	background: rgba(255, 255, 255, 0.5);
 }
-.bookStyle:after {
+.bookStyle.hoverable:after {
 	position: absolute;
 	transition: all 0.3s ease-in-out;
 	content: '';
@@ -134,7 +155,7 @@ body {
 	background-size: 100vw 100vh;
 	animation: gradient 2s ease infinite;
 }
-.bookStyle:hover:after {
+.bookStyle.hoverable:hover:after {
 	width: 100%;
 	left: 0;
 }
@@ -145,6 +166,8 @@ p.bookStyle {
 	text-align: justify;
 	font-size: 15pt;
 	transition: all 1s ease-in-out;
+}
+.bookStyle.hoverable {
 	background: rgba(255, 255, 255, 1);
 }
 .linear-wipe {
