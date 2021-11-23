@@ -1,3 +1,5 @@
+const numerZad = 34
+
 let backgrounds = [
 	'linear-gradient(-45deg, #6fa3f1, #ec8fb3, #eca7ca, #acebc8)',
 	'linear-gradient(-45deg, #6fa3f1, #8fece7, #68cc81, #c3b1f5)',
@@ -40,7 +42,7 @@ function dodajKodFicerman(zad) {
 document.addEventListener('DOMContentLoaded', function () {
 	kodyOn = false
 	document.getElementById('mainContainer').replaceChildren()
-	for (let k = 0; k < 29; k++) {
+	for (let k = 0; k < numerZad; k++) {
 		dodajZadFicerman(k + 1)
 	}
 })
@@ -164,25 +166,23 @@ kodyOn = new Boolean(false)
 
 settings.addEventListener('click', function () {
 	if (kodyOn == false) {
-		document.body.style.background =
-			'linear-gradient(-45deg, #98abc7, #8fece7, #68ccbb, #c3b1f5)'
+		document.body.style.background = backgrounds[1]
 		document.body.style.backgroundSize = '400vw 400vh'
 		document.body.style.animation = 'gradient 15s ease infinite'
 
 		document.getElementById('mainContainer').replaceChildren()
-		for (let k = 0; k < 29; k++) {
+		for (let k = 0; k < numerZad; k++) {
 			dodajKodFicerman(k + 1)
 		}
 		kodyOn = true
 	} else if (kodyOn == true) {
 		kodyOn = false
-		document.body.style.background =
-			'linear-gradient(-45deg, #6fa3f1, #ec8fb3, #eca7ca, #acebc8)'
+		document.body.style.background = backgrounds[0]
 		document.body.style.backgroundSize = '400vw 400vh'
 		document.body.style.animation = 'gradient 15s ease infinite'
 
 		document.getElementById('mainContainer').replaceChildren()
-		for (let k = 0; k < 29; k++) {
+		for (let k = 0; k < numerZad; k++) {
 			dodajZadFicerman(k + 1)
 		}
 	}
