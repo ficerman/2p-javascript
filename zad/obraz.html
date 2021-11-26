@@ -1,8 +1,51 @@
-<html>      <head>            <script type="text/javascript">                  function okno_zamknij_Ficerman()                         {                              window.close()                        }             </script>      </head> <body>  Co to jest  JavaScript? Ten  wszechobecny  dziś język  skryptowy  został  stworzony  –  początkowo  jako  LiveScript  –  na potrzeby firmy  Netscape  i przeglądarki Navigator.  Zamierzeniem  jego  projektantów  było  rozszerzenie możliwości języka  HTML  w  taki  sposób,  aby  strony  stały  się  bardziej atrakcyjne  pod  względem sposobu  prezentacji  danych  oraz  możliwości interakcji z  użytkownikiem.  W  1995  roku, na  mocy porozumienia z  firmą Sun  Microsystems,  w  zamian  za  włączenie  do  przeglądarki  Netscape  obsługi technologii  Java, język  otrzymał  oficjalną nazwę  JavaScript. W  grudniu  tego  samego  roku został zaimplementowany  w  najnowszej wówczas wersji Navigatora i  rozpoczął  triumfalny  pochód  przez Sieć. JavaScript  jest  przede  wszystkim  językiem  skryptowym  –  to  znaczy  interpretowanym. Nie  musi zostać  skompilowany  do  kodu  maszynowego,  aby  można było  zobaczyć  efekty  jego  działania. Wystarczy  nam  do  tego  przeglądarka internetowa,  która ten  język  obsługuje  –  czyli  w  zasadzie  każda z  liczących się  na rynku aplikacji. Ze  względów  bezpieczeństwa  JavaScript  ma znacznie ograniczone uprawnienia dostępu  do  zasobów  komputera,  przy  użyciu  którego  przeglądana jest  dana strona, a wszelkie  odwołania do  funkcji  i  obiektów  wykonywane  są  w  trakcie  wykonywania programu. JavaScript  a Java Zbieżność  nazw  obu  języków  może  być  dla  początkującego  użytkownika  myląca.  Przyjęcie  takiej, a  nie innej  nazwy  dla  produktu  Netscape'a  najprawdopodobniej podyktowane  było  względami marketingowymi, ale  zasadność  łączenia  obu  pakietów  do  dziś jest  przedmiotem  kontrowersji. Istnieją tutaj dwie  szkoły:  jedni uważają, że  JavaScript  sięga swoimi  korzeniami środowiska  Java, wskazując na  przykład  na podobieństwo  składni, inni zaś dowodzą, że  poza nazwą  oba języki niewiele mają ze  sobą wspólnego. Jakiekolwiek  miałoby  być  rozstrzygnięcie  tego  sporu, debiutujący programiści powinni pamiętać  o  tym, że  mają  do  czynienia z zupełnie  odrębnymi  mechanizmami. Zalety  JavaScriptu Największą zaletą JavaScriptu jest  niewątpliwie  jego  prostota. Język  ten  uważa  się  więc  za relatywnie łatwy  do  opanowania i  rzeczywiście  –  nic  nie stoi na  przeszkodzie,  aby  zacząć  używać  go  już  po  kilku minutach  od  rozpoczęcia nauki. Ponieważ  jest  to  obecnie najbardziej rozpowszechniony  język skryptowy,  w  Internecie  można znaleźć  miliony  praktycznych przykładów  –  witryn  wykorzystujących różnorodne  funkcje  JavaScriptu. O  olbrzymiej popularności języka zadecydowały  z pewnością jego  uniwersalność  oraz  fakt,  iż  pozwala on  na  odciążenie  serwerów  i ograniczenie  ilości zbędnych danych przesyłanych pomiędzy  nimi a przeglądarką klienta.  Najprostszym  przykładem  tych zalet  mogą  być  choćby  sklepy  internetowe, których nieodzownym  elementem  są  formularze  wypełniane  przez użytkownika.  Dzięki  JavaScriptowi można  sprawdzić poprawność  wprowadzonych danych  na komputerze  klienta, unikając  –  przy ewentualnym  błędzie  –  urzeczywistnienia scenariusza,  w  którym  dane  są wysyłane,  a serwer  zużywa moc  obliczeniową  na ich  sprawdzenie,  wygenerowanie  strony  z  opisem  błędu  i  odesłaniem  jej z powrotem. JavaScript  jest  nieustannie  rozwijany.  Podstawowe  funkcje  z biegiem  czasu  uzupełniane  są  o  nowe narzędzia, jak chociażby  obiekt  Image  i tablica document.images,  które  pojawiły  się  w  JavaScripcie 1.1  i  wzbogaciły  język  o  opcje  manipulacji  plikami graficznymi.  Wraz  z wersją  1.2,  koncepcją dynamicznego  HTML-a  i zastosowaniem  warstw  możliwości projektowania interaktywnych  stron zwiększyły  się  wręcz zdumiewająco. Obecnie przy  użyciu  odpowiednich  bibliotek  –  jak  na przykład script.aculo.us czy  mootools  –  tworzyć  można aplikacje  sieciowe  o  dużym  stopniu  zaawansowania i atrakcyjnym  interfejsie. <pre> toolbar=no ukrywa pasek zadan przegladarki
+<html>
+
+<head>
+  <script
+    type="text/javascript">                  function okno_zamknij_Ficerman() { window.close() }</script>
+</head>
+
+<body> Co to jest JavaScript? Ten wszechobecny dziś język skryptowy został stworzony – początkowo jako LiveScript – na
+  potrzeby firmy Netscape i przeglądarki Navigator. Zamierzeniem jego projektantów było rozszerzenie możliwości języka
+  HTML w taki sposób, aby strony stały się bardziej atrakcyjne pod względem sposobu prezentacji danych oraz możliwości
+  interakcji z użytkownikiem. W 1995 roku, na mocy porozumienia z firmą Sun Microsystems, w zamian za włączenie do
+  przeglądarki Netscape obsługi technologii Java, język otrzymał oficjalną nazwę JavaScript. W grudniu tego samego roku
+  został zaimplementowany w najnowszej wówczas wersji Navigatora i rozpoczął triumfalny pochód przez Sieć. JavaScript
+  jest przede wszystkim językiem skryptowym – to znaczy interpretowanym. Nie musi zostać skompilowany do kodu
+  maszynowego, aby można było zobaczyć efekty jego działania. Wystarczy nam do tego przeglądarka internetowa, która ten
+  język obsługuje – czyli w zasadzie każda z liczących się na rynku aplikacji. Ze względów bezpieczeństwa JavaScript ma
+  znacznie ograniczone uprawnienia dostępu do zasobów komputera, przy użyciu którego przeglądana jest dana strona, a
+  wszelkie odwołania do funkcji i obiektów wykonywane są w trakcie wykonywania programu. JavaScript a Java Zbieżność
+  nazw obu języków może być dla początkującego użytkownika myląca. Przyjęcie takiej, a nie innej nazwy dla produktu
+  Netscape'a najprawdopodobniej podyktowane było względami marketingowymi, ale zasadność łączenia obu pakietów do dziś
+  jest przedmiotem kontrowersji. Istnieją tutaj dwie szkoły: jedni uważają, że JavaScript sięga swoimi korzeniami
+  środowiska Java, wskazując na przykład na podobieństwo składni, inni zaś dowodzą, że poza nazwą oba języki niewiele
+  mają ze sobą wspólnego. Jakiekolwiek miałoby być rozstrzygnięcie tego sporu, debiutujący programiści powinni pamiętać
+  o tym, że mają do czynienia z zupełnie odrębnymi mechanizmami. Zalety JavaScriptu Największą zaletą JavaScriptu jest
+  niewątpliwie jego prostota. Język ten uważa się więc za relatywnie łatwy do opanowania i rzeczywiście – nic nie stoi
+  na przeszkodzie, aby zacząć używać go już po kilku minutach od rozpoczęcia nauki. Ponieważ jest to obecnie najbardziej
+  rozpowszechniony język skryptowy, w Internecie można znaleźć miliony praktycznych przykładów – witryn wykorzystujących
+  różnorodne funkcje JavaScriptu. O olbrzymiej popularności języka zadecydowały z pewnością jego uniwersalność oraz
+  fakt, iż pozwala on na odciążenie serwerów i ograniczenie ilości zbędnych danych przesyłanych pomiędzy nimi a
+  przeglądarką klienta. Najprostszym przykładem tych zalet mogą być choćby sklepy internetowe, których nieodzownym
+  elementem są formularze wypełniane przez użytkownika. Dzięki JavaScriptowi można sprawdzić poprawność wprowadzonych
+  danych na komputerze klienta, unikając – przy ewentualnym błędzie – urzeczywistnienia scenariusza, w którym dane są
+  wysyłane, a serwer zużywa moc obliczeniową na ich sprawdzenie, wygenerowanie strony z opisem błędu i odesłaniem jej z
+  powrotem. JavaScript jest nieustannie rozwijany. Podstawowe funkcje z biegiem czasu uzupełniane są o nowe narzędzia,
+  jak chociażby obiekt Image i tablica document.images, które pojawiły się w JavaScripcie 1.1 i wzbogaciły język o opcje
+  manipulacji plikami graficznymi. Wraz z wersją 1.2, koncepcją dynamicznego HTML-a i zastosowaniem warstw możliwości
+  projektowania interaktywnych stron zwiększyły się wręcz zdumiewająco. Obecnie przy użyciu odpowiednich bibliotek – jak
+  na przykład script.aculo.us czy mootools – tworzyć można aplikacje sieciowe o dużym stopniu zaawansowania i
+  atrakcyjnym interfejsie.
+  <pre> toolbar=no ukrywa pasek zadan przegladarki
  directories=no ukrywa pasek adresu
  menubar=no ukrywa menu przegladarki
  height=280 zmienia wysokosc okna
   width=160 zmienia szerokosc okna 
   top=200  zmienia pozycje
 left=200 zmienia pozycje
-window.close() zamyka okno</pre><img src="obraz1.gif" />        <input type="button" value="zamknij okno" onclick="okno_zamknij_Ficerman()"/> </body> </html> 
+window.close() zamyka okno</pre><img src="obraz1.gif" /> <input type="button" value="zamknij okno"
+    onclick="okno_zamknij_Ficerman()" />
+</body>
+
+</html>
