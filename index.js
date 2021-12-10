@@ -20,9 +20,9 @@ function dodajZadFicerman(zad) {
 	zadP.setAttribute('onclick', 'winOpenFicerman(' + zad + ', "")')
 	zadP.setAttribute('id', zad)
 	/*let zadPKod = document.createElement('button')
-	zadPKod.innerHTML = 'kod'
-	zadPKod.className = 'zadP kod'
-	zadP.appendChild(zadPKod)*/
+		zadPKod.innerHTML = 'kod'
+		zadPKod.className = 'zadP kod'
+		zadP.appendChild(zadPKod)*/
 	document.getElementById('mainContainer').appendChild(zadP)
 }
 
@@ -33,9 +33,9 @@ function dodajKodFicerman(zad) {
 	zadP.setAttribute('onclick', 'winOpenFicerman(' + zad + ', "kod")')
 	zadP.setAttribute('id', zad + 'kod')
 	/*let zadPKod = document.createElement('button')
-	zadPKod.innerHTML = 'kod'
-	zadPKod.className = 'zadP kod'
-	zadP.appendChild(zadPKod)*/
+		zadPKod.innerHTML = 'kod'
+		zadPKod.className = 'zadP kod'
+		zadP.appendChild(zadPKod)*/
 	document.getElementById('mainContainer').appendChild(zadP)
 }
 
@@ -44,6 +44,9 @@ document.addEventListener('DOMContentLoaded', function () {
 	document.getElementById('mainContainer').replaceChildren()
 	for (let k = 0; k < numerZad; k++) {
 		dodajZadFicerman(k + 1)
+	}
+	for (let k = 0; k < 17; k++) {
+		dodajZadFicerman(k + 62)
 	}
 })
 kotekPermaMad = new Boolean(false)
@@ -174,6 +177,9 @@ settings.addEventListener('click', function () {
 		for (let k = 0; k < numerZad; k++) {
 			dodajKodFicerman(k + 1)
 		}
+		for (let k = 0; k < 17; k++) {
+			dodajKodFicerman(k + 62)
+		}
 		kodyOn = true
 	} else if (kodyOn == true) {
 		kodyOn = false
@@ -184,6 +190,9 @@ settings.addEventListener('click', function () {
 		document.getElementById('mainContainer').replaceChildren()
 		for (let k = 0; k < numerZad; k++) {
 			dodajZadFicerman(k + 1)
+		}
+		for (let k = 0; k < 17; k++) {
+			dodajZadFicerman(k + 62)
 		}
 	}
 })

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="zadania.css">
+</head>
+
+<body>
+    <div style="font-size:50px;">
+        <span style='color: #222; font-size: 7'>wczytany kolor: </span><br>
+        <script language="JavaScript">
+            let x_fic = prompt("podaj liczbę x_fic: ", "").toLowerCase();
+            if (x_fic == "1" || x_fic == "czerwony") {
+                document.write("<span style='color: tomato; font-size: 70pt'>czerwony</span><br>");
+            }
+            else if (x_fic == "2" || x_fic == "niebieski") {
+                document.write("<span style='color: blue; font-size: 10pt'>niebieski</span><br>");
+            }
+            else {
+                document.write("/niepoprawne dane/<br>")
+            }
+        </script>
+    </div>
+    <footer>informacja: wielkości tekstu są 10-krotnie większe niż te podane w zadaniu, oryginalne były trudne do
+        odczytania na moim monitorze; proporcja pomiędzy nimi została utrzymana.
+    </footer>
+</body>
+
+</html>

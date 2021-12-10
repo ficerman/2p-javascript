@@ -1,0 +1,22 @@
+<html>
+
+<body>
+    <div style="color: tomato;font-size: 0.5cm; font-family: monospace; text-align: center;">
+        <script language="JavaScript">
+            let no_fic = prompt("N0=");
+            let t_fic = prompt("t=");
+            let t12_fic = prompt("T1/2=");
+
+            let lambda = Math.LN2 / t12_fic;
+            lambda = lambda.toFixed(7);
+            let pow = (-1 * lambda) * t_fic;
+            let n = no_fic * Math.pow(Math.E, pow);
+            n = n.toFixed(7);
+
+            document.write("No = " + no_fic + "[sztuk] <br> t = " + t_fic + "[lat] <br> T1/2 = " + t12_fic + "[lat] <br> Lambda = " + lambda + "[1/rok] <br> N = " + n + "[sztuk] <br>");
+
+        </script>
+    </div>
+</body>
+
+</html>

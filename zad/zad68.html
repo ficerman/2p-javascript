@@ -1,0 +1,25 @@
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="zadania.css">
+</head>
+
+<body>
+    <div style="font-size:42px;">
+        <script language="JavaScript">
+            let x_fic = prompt("podaj liczbę: ", "")
+            let x = parseFloat(x_fic)
+            for (i = 0; i < 10; i++) {
+                if (x % 2 == 0) {
+                    document.write("<span style='color: blue'>wyświetlam " + (i + 1) + " raz | Ficerman </span><br>");
+                }
+                else {
+                    document.write("<span style='color: green'>wyświetlam " + (i + 1) + " raz | Laura </span><br>");
+                }
+            }
+        </script>
+    </div>
+</body>
+
+</html>

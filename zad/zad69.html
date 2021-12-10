@@ -1,0 +1,40 @@
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="zadania.css">
+    <style>
+        div {
+            font-family: monospace;
+            white-space: pre;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="font-size:42px;">
+        <p id="tekst"></p>
+        <script language="JavaScript">
+            let a = 5;
+            let b = 21;
+            let tekst = document.getElementById("tekst")
+            function lPozioma() {
+                for (i = 0; i < b; i++) {
+                    tekst.innerHTML += ("*");
+                }
+            }
+            lPozioma()
+            tekst.innerHTML += ("<br>");
+            for (i = 0; i < a; i++) {
+                tekst.innerHTML += ("*");
+                for (j = 0; j < (b + 13); j++) {
+                    tekst.innerHTML += (" ")
+                }
+                tekst.innerHTML += ("* <br>");
+            }
+            lPozioma()
+        </script>
+    </div>
+</body>
+
+</html>
