@@ -1,4 +1,4 @@
-const numerZad = 34
+const numerZad = 23
 
 let backgrounds = [
 	'linear-gradient(-45deg, #6fa3f1, #ec8fb3, #eca7ca, #acebc8)',

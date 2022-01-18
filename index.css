@@ -273,11 +273,13 @@ a:visited {
 	height: 8vh;
 	width: auto;
 }
-#settings img {
+#settings > * {
 	transition: all 0.3s ease-in-out;
 	height: 100%;
+	color: white;
+	font-size: 3vw;
 }
-#settings img:hover {
+#settings > *:hover {
 	transform: scale(1.2);
 }
 .zadP {

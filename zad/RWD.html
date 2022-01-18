@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="../index.css">
+    <link rel="icon" href="../ico/icon.ico">
+
+    <title>5</title>
+</head>
+
+<body>
+    <p id="nazwisko" class="nazwisko">Ficerman</p>
+    <div id="mainContainer" class="container">"
+        <button class="zadP" onclick="winOpenFicerman('2', 'RWD')">
+            Z2
+        </button>
+        <button class="zadP" onclick="winOpenFicerman('2', 'RWDkod')">
+            Z2 - Kod CSS z komentarzami
+        </button>
+        <button class="zadP" onclick="winOpenFicerman('3', 'RWD')">
+            Z3
+        </button>
+        <button class="zadP" onclick="winOpenFicerman('4', 'RWD')">
+            Z4
+        </button>
+    </div>
+    <div class="containerRow">
+    </div>
+    <script>
+        function winOpenFicerman(zad, suffix) {
+            window.open(
+                'zad' + zad + suffix + '.html',
+                'okienko',
+                'toolbar=no,directories=no,menubar=no,height=1000,width=1000,top=200,left=200'
+            )
+        }</script>
+</body>
+
+</html>

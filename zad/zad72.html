@@ -1,0 +1,35 @@
+<html lang="pl">
+    
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="zadania.css">
+    </head>
+    <body>
+        <div>
+            <script>
+                let l1_t_fic = prompt("podaj liczbę z przedziału 20-60: ","");
+                let l2_t_fic = prompt("podaj liczbę z przedziału 20-60: ","");
+                let i = parseInt(prompt("Podaj wielkość tekstu =",""));
+                let tekst_fic = prompt("Podaj tekst = ","");
+
+                let l1 = parseInt(l1_t_fic);
+                let l2 = parseInt(l2_t_fic);
+
+                if(l1 < 20 || l1 > 60 || l2 < 20 || l1 > 60)
+                    document.write("Podałeś wartośc z poza zakresu 20-60");
+                else if(l1 < l2)
+                    while(pocz < 100)
+                    {
+                        document.write("<p style=\"font-size: " + i + "px; color: black;\"><br>" + tekst_fic + "<br></p>");
+                        i += 5;
+                    }
+                else if(l1 > l2)
+                    while(pocz > 0)
+                        {
+                            document.write("<p style=\"font-size: " + i + "px; color: black;\"><br>" + tekst_fic + "<br></p>");
+                            i -= 5;
+                        }
+            </script>
+        </div>
+    </body>
+</html>

@@ -20,19 +20,20 @@
     <div style="font-size:42px;">
         <p id="tekst"></p>
         <script language="JavaScript">
-            let a = 5;
-            let b = 21;
+            let a = parseFloat(prompt("podaj a: "))
+            let b = parseFloat(prompt("podaj b: "))
+
             let tekst = document.getElementById("tekst")
             function lPozioma() {
-                for (i = 0; i < b; i++) {
+                for (i = 0; i < a; i++) {
                     tekst.innerHTML += ("*");
                 }
             }
             lPozioma()
             tekst.innerHTML += ("<br>");
-            for (i = 0; i < a; i++) {
+            for (i = 0; i < b; i++) {
                 tekst.innerHTML += ("*");
-                for (j = 0; j < (b - 2); j++) {
+                for (j = 0; j < (a - 2); j++) {
                     tekst.innerHTML += (" ")
                 }
                 tekst.innerHTML += ("*<br>");

@@ -1,0 +1,8 @@
+div {
+	background-color: tomato;
+}
+@media screen, projection, tty, tv {
+	div {
+		background-color: green;
+	}
+}

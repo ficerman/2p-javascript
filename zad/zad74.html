@@ -1,0 +1,24 @@
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="zadania.css">
+    </head>
+    <body>
+        <div style="font-size: 30px;">
+            <script>
+                for(let i = 1; i <= 20; i++)
+                {
+                    let pierw_2 = Math.sqrt(i);
+                    let pierw_4 = Math.sqrt(pierw_2);
+                    pierw_2 = pierw_2.toFixed(2);
+                    pierw_4 = pierw_4.toFixed(2);
+
+                    document.write("i = " + i + "&emsp;pierw_2(" + i + ") = " + pierw_2 + "&emsp;pierw_4(" + i + ") = " + pierw_4 + "<br>")
+
+                    if(i%3 == 0)
+                        confirm();
+                }
+            </script>
+        </div>
+    </body>
+</html>
